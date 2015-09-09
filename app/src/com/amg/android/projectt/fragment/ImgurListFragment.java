@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.ImageView; 
 
 import com.amg.android.projectt.R;
 import com.amg.android.projectt.client.ImgurClient;
@@ -50,12 +51,12 @@ public class ImgurListFragment extends Fragment {
 
     private class ListViewHolder extends RecyclerView.ViewHolder {
 
-        private ForceAspectRatioImageView imageView;
+        private ImageView imageView;
         private TextView titleView;
 
         public ListViewHolder(View view){
             super(view);
-            imageView = (ForceAspectRatioImageView)view.findViewById(R.id.image);
+            imageView = (ImageView)view.findViewById(R.id.image);
             titleView = (TextView)view.findViewById(R.id.title);
         }
 
